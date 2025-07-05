@@ -17,15 +17,20 @@ import Stylesheet from "./components/Stylesheet";
 import Inlinestyle from "./components/Inlinestyle";
 import styles from "./appStyle.module.css";
 import "./appStyle.css";
-import World from "./components/world";
+import Form from "./components/form";
+import LifecycleA from "./components/LifecycleA";
+import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
     <div className="App">
-      <h1 className='error'>Error</h1>
-      <h1 className={styles.success}>Success</h1>
-      <Inlinestyle/>
-      <World/>
+      <ParentComp/>
+      {/* <LifecycleA/> */}
+      {/* <h1 className='error'>Error</h1> */}
+      {/* <h1 className={styles.success}>Success</h1> */}
+      {/* <Inlinestyle/> */}
+      {/* <Form /> */}
       {/* <Stylesheet primary={true}/> */}
       {/* <Keyindex/> */}
       {/* <List/> */}
