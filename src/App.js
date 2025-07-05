@@ -17,6 +17,7 @@ import Stylesheet from "./components/Stylesheet";
 import Inlinestyle from "./components/Inlinestyle";
 import styles from "./appStyle.module.css";
 import "./appStyle.css";
+import World from "./components/world";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
       <Inlinestyle/>
+      <World/>
       {/* <Stylesheet primary={true}/> */}
       {/* <Keyindex/> */}
       {/* <List/> */}
