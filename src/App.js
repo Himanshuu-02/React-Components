@@ -21,11 +21,25 @@ import Form from "./components/form";
 import LifecycleA from "./components/LifecycleA";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
+import RefDemo from "./components/RefDemo";
+import FocusInput from "./components/FocusInput";
+import ParentFR from "./components/ParentFR";
+import Portal from "./components/Portal";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+
 
 function App() {
   return (
     <div className="App">
-      <ParentComp/>
+      <ClickCounter/>
+      <HoverCounter/>
+      {/* <Portal/> */}
+      
+      {/* <FocusInput/> */}
+      {/* <ParentFR/> */}
+      {/* <RefDemo/> */}
+      {/* <ParentComp/> */}
       {/* <LifecycleA/> */}
       {/* <h1 className='error'>Error</h1> */}
       {/* <h1 className={styles.success}>Success</h1> */}
