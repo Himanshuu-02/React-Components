@@ -27,15 +27,33 @@ import ParentFR from "./components/ParentFR";
 import Portal from "./components/Portal";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
-
+import ClickCountertwo from "./components/ClickCountertwo";
+import HoverCountertwo from "./components/HoverCountertwo";
+import Counter from "./components/counter";
+import ComponentA from "./components/ComponentA";
+import { UserProvider } from "./components/UserContext";
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter/>
-      <HoverCounter/>
+         <UserProvider value="Himanshu">       
+        <ComponentA />
+      </UserProvider>
+      {/* <Counter
+        render={(count, ClickHandler) => (
+          <ClickCountertwo count={count} ClickHandler={ClickHandler} />
+        )}
+      />
+      <Counter
+        render={(count, ClickHandler) => (
+          <HoverCountertwo count={count} ClickHandler={ClickHandler} />
+        )}
+      /> */}
+      {/* <ClickCountertwo/>
+      <HoverCountertwo/> */}
+      {/* <ClickCounter/> */}
+      {/* <HoverCounter/> */}
       {/* <Portal/> */}
-      
       {/* <FocusInput/> */}
       {/* <ParentFR/> */}
       {/* <RefDemo/> */}
